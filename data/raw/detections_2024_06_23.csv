@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-06-23 13:48:00,ice cream truck,2,0.83,,,,,,
+2024-06-23 04:34:00,newspaper,1,0.9,,,,,,
+2024-06-23 08:38:00,truck,4,0.87,,,,,,
+2024-06-23 17:20:00,bird,2,0.94,fedex truck,2,0.62,person,5,0.6
+2024-06-23 06:28:00,person,5,0.86,ups truck,2,0.71,,,

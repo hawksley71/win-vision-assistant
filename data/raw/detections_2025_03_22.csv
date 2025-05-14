@@ -1,0 +1,4 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-03-22 08:57:00,chipmunk,1,0.79,,,,,,
+2025-03-22 07:42:00,fedex truck,3,0.53,truck,4,0.52,person,5,0.71
+2025-03-22 06:07:00,dog,2,0.6,chipmunk,4,0.91,,,

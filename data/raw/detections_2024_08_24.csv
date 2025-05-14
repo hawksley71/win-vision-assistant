@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-08-24 12:42:00,ice cream truck,3,0.74,,,,,,
+2024-08-24 05:55:00,police car,2,0.77,,,,,,
+2024-08-24 10:40:00,prime van,2,0.96,chipmunk,4,0.79,,,
+2024-08-24 10:02:00,fedex truck,3,0.82,bird,5,0.54,,,
+2024-08-24 13:33:00,truck,3,0.92,,,,,,

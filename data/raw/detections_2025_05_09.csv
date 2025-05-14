@@ -1,0 +1,9 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-05-09 07:07:00,school bus,2,0.88,,,,,,
+2025-05-09 15:01:00,school bus,2,0.94,,,,,,
+2025-05-09 14:11:00,mail truck,3,0.7,,,,,,
+2025-05-09 23:02:00,racoon,1,0.77,,,,,,
+2025-05-09 03:08:00,racoon,1,0.91,,,,,,
+2025-05-09 10:05:00,cat,1,0.67,ups truck,4,0.6,,,
+2025-05-09 06:06:00,fedex truck,3,0.82,bicycle,3,0.65,,,
+2025-05-09 15:03:00,car,3,0.66,stroller,1,0.98,,,

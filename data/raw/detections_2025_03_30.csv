@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-03-30 04:23:00,newspaper,3,0.93,,,,,,
+2025-03-30 07:21:00,person,4,0.94,,,,,,
+2025-03-30 13:32:00,stroller,3,0.65,,,,,,
+2025-03-30 18:14:00,car,4,0.75,bicycle,5,0.89,truck,5,0.79

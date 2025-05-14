@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-12-22 04:00:00,newspaper,3,0.79,,,,,,
+2024-12-22 16:47:00,skunk,1,0.85,,,,,,
+2024-12-22 16:54:00,dog,3,0.72,prime van,1,0.57,stroller,3,0.94
+2024-12-22 17:15:00,cat,1,0.87,car,3,0.73,prime van,4,0.92
+2024-12-22 12:12:00,cat,4,0.68,truck,1,0.7,prime van,1,0.85

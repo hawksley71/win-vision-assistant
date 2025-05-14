@@ -1,0 +1,10 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-03-18 07:11:00,school bus,2,0.9,,,,,,
+2025-03-18 15:00:00,school bus,3,0.77,,,,,,
+2025-03-18 14:32:00,mail truck,2,0.92,,,,,,
+2025-03-18 06:42:00,garbage truck,3,0.95,,,,,,
+2025-03-18 07:46:00,recycling truck,2,0.93,,,,,,
+2025-03-18 09:24:00,police car,1,0.81,,,,,,
+2025-03-18 08:43:00,chipmunk,2,0.64,,,,,,
+2025-03-18 07:47:00,chipmunk,1,0.83,,,,,,
+2025-03-18 17:31:00,ups truck,1,0.96,cat,1,0.92,person,5,0.93

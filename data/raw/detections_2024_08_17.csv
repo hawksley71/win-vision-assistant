@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-08-17 13:33:00,ice cream truck,3,0.86,,,,,,
+2024-08-17 07:18:00,prime van,5,0.92,ups truck,4,0.88,,,
+2024-08-17 08:45:00,prime van,2,0.71,ups truck,2,0.58,,,
+2024-08-17 15:07:00,bird,1,0.76,ups truck,1,0.54,,,

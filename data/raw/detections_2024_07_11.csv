@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-07-11 14:12:00,mail truck,1,0.73,,,,,,
+2024-07-11 14:52:00,ice cream truck,2,0.86,,,,,,
+2024-07-11 14:30:00,police car,3,0.72,,,,,,
+2024-07-11 16:35:00,bird,5,0.63,,,,,,
+2024-07-11 09:15:00,cat,4,0.7,,,,,,
+2024-07-11 09:20:00,person,2,0.67,,,,,,

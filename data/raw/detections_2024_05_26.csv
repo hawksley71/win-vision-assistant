@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-05-26 04:16:00,newspaper,1,0.95,,,,,,
+2024-05-26 00:39:00,skunk,1,0.72,,,,,,
+2024-05-26 07:51:00,person,5,0.86,stroller,3,0.69,car,1,0.52
+2024-05-26 11:40:00,prime van,3,0.71,,,,,,
+2024-05-26 17:51:00,cat,4,0.65,,,,,,

@@ -1,0 +1,9 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-05-27 07:09:00,school bus,3,0.94,,,,,,
+2024-05-27 15:25:00,school bus,3,0.88,,,,,,
+2024-05-27 14:11:00,mail truck,1,0.96,,,,,,
+2024-05-27 22:55:00,racoon,3,0.95,,,,,,
+2024-05-27 00:07:00,racoon,1,0.79,,,,,,
+2024-05-27 12:44:00,chipmunk,5,0.91,truck,3,0.79,,,
+2024-05-27 13:07:00,prime van,2,0.87,car,3,0.67,stroller,5,0.63
+2024-05-27 08:48:00,ups truck,5,0.71,prime van,3,0.83,,,

@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-09-30 07:12:00,school bus,2,0.7,,,,,,
+2024-09-30 15:07:00,school bus,2,0.74,,,,,,
+2024-09-30 14:48:00,mail truck,2,0.9,,,,,,
+2024-09-30 10:17:00,stroller,4,0.56,,,,,,
+2024-09-30 13:19:00,prime van,5,0.73,,,,,,
+2024-09-30 17:01:00,bicycle,4,0.94,prime van,3,0.57,cat,1,0.84

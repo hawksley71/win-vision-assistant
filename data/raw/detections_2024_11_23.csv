@@ -1,0 +1,4 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-11-23 17:42:00,cat,5,0.58,person,4,0.85,,,
+2024-11-23 10:08:00,stroller,2,0.88,dog,5,0.76,,,
+2024-11-23 13:12:00,car,4,0.9,,,,,,

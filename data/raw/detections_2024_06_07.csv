@@ -1,0 +1,9 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-06-07 07:08:00,school bus,3,0.79,,,,,,
+2024-06-07 15:11:00,school bus,3,0.94,,,,,,
+2024-06-07 14:38:00,mail truck,1,0.91,,,,,,
+2024-06-07 14:59:00,ice cream truck,3,0.96,,,,,,
+2024-06-07 09:09:00,streetcleaner,1,0.73,,,,,,
+2024-06-07 18:10:00,chipmunk,4,0.56,bicycle,1,0.59,,,
+2024-06-07 09:19:00,chipmunk,5,0.9,person,5,0.86,stroller,3,0.58
+2024-06-07 10:18:00,chipmunk,3,0.82,prime van,3,0.75,,,

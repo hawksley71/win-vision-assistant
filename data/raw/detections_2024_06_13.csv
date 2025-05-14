@@ -1,0 +1,8 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-06-13 07:14:00,school bus,2,0.78,,,,,,
+2024-06-13 15:29:00,school bus,2,0.99,,,,,,
+2024-06-13 14:51:00,mail truck,2,0.74,,,,,,
+2024-06-13 12:07:00,ice cream truck,1,0.92,,,,,,
+2024-06-13 12:19:00,truck,1,0.63,car,4,0.66,,,
+2024-06-13 13:22:00,bicycle,4,0.92,,,,,,
+2024-06-13 07:40:00,prime van,3,0.71,dog,4,0.86,,,

@@ -1,0 +1,8 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-01-14 07:07:00,school bus,2,0.82,,,,,,
+2025-01-14 15:11:00,school bus,1,0.76,,,,,,
+2025-01-14 14:10:00,mail truck,1,0.88,,,,,,
+2025-01-14 06:34:00,garbage truck,1,0.96,,,,,,
+2025-01-14 10:47:00,prime van,5,0.99,,,,,,
+2025-01-14 16:00:00,truck,1,0.54,,,,,,
+2025-01-14 16:29:00,person,4,0.55,,,,,,

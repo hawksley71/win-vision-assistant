@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-07-07 12:45:00,ice cream truck,3,0.88,,,,,,
+2024-07-07 04:21:00,newspaper,3,0.82,,,,,,
+2024-07-07 01:15:00,skunk,2,0.85,,,,,,
+2024-07-07 13:47:00,bird,4,0.84,,,,,,
+2024-07-07 07:16:00,bird,3,0.65,dog,2,0.75,,,
+2024-07-07 06:05:00,fedex truck,1,0.51,ups truck,4,0.59,dog,1,0.65

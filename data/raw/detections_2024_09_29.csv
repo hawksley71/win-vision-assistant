@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-09-29 04:22:00,newspaper,3,0.72,,,,,,
+2024-09-29 14:04:00,cat,1,0.87,,,,,,
+2024-09-29 14:56:00,bicycle,3,0.84,chipmunk,4,0.85,,,
+2024-09-29 09:32:00,bird,5,0.8,cat,2,0.89,dog,2,0.77

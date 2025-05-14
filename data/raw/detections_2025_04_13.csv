@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-04-13 04:00:00,newspaper,2,0.83,,,,,,
+2025-04-13 11:32:00,police car,2,0.98,,,,,,
+2025-04-13 10:42:00,bird,2,0.91,prime van,2,0.91,,,
+2025-04-13 10:15:00,car,4,0.65,,,,,,
+2025-04-13 15:26:00,dog,4,0.88,chipmunk,2,0.52,,,

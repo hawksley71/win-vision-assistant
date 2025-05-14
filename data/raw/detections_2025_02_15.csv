@@ -1,0 +1,4 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-02-15 13:16:00,cat,2,0.61,,,,,,
+2025-02-15 16:56:00,ups truck,4,0.86,bicycle,3,0.64,stroller,1,0.51
+2025-02-15 13:54:00,truck,1,0.94,,,,,,

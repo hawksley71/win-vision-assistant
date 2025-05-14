@@ -1,0 +1,4 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-09-14 14:53:00,ups truck,3,0.54,prime van,1,0.88,car,5,0.63
+2024-09-14 13:37:00,ups truck,4,0.52,,,,,,
+2024-09-14 17:00:00,dog,1,0.58,chipmunk,5,0.57,bird,1,0.83

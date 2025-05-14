@@ -1,0 +1,4 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-09-28 06:30:00,chipmunk,3,0.54,,,,,,
+2024-09-28 18:02:00,truck,3,0.64,,,,,,
+2024-09-28 08:25:00,bird,5,0.54,,,,,,

@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-09-22 04:00:00,newspaper,2,0.74,,,,,,
+2024-09-22 12:57:00,bicycle,4,0.54,,,,,,
+2024-09-22 11:02:00,fedex truck,3,0.86,dog,3,0.95,prime van,1,0.73
+2024-09-22 07:44:00,ups truck,4,0.79,bicycle,5,0.72,truck,3,0.57

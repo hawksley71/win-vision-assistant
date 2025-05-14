@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-02-08 10:23:00,snow plow,2,1.0,,,,,,
+2025-02-08 08:22:00,bicycle,3,0.89,stroller,4,0.58,dog,2,0.51
+2025-02-08 17:42:00,fedex truck,4,0.58,person,4,0.67,,,
+2025-02-08 17:44:00,dog,5,0.77,ups truck,4,0.63,bicycle,2,0.82

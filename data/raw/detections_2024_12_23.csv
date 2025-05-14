@@ -1,0 +1,8 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-12-23 07:03:00,school bus,3,0.98,,,,,,
+2024-12-23 15:02:00,school bus,3,0.77,,,,,,
+2024-12-23 14:34:00,mail truck,1,0.75,,,,,,
+2024-12-23 12:56:00,snow plow,3,0.98,,,,,,
+2024-12-23 10:29:00,bird,3,0.74,truck,5,0.76,dog,1,0.96
+2024-12-23 11:35:00,prime van,2,0.6,,,,,,
+2024-12-23 11:17:00,cat,2,0.75,prime van,4,0.81,bicycle,3,0.84

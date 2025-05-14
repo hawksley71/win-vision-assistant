@@ -1,0 +1,8 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-02-26 07:05:00,school bus,3,0.99,,,,,,
+2025-02-26 15:18:00,school bus,1,0.79,,,,,,
+2025-02-26 14:07:00,mail truck,3,0.71,,,,,,
+2025-02-26 18:00:00,snow plow,1,0.87,,,,,,
+2025-02-26 11:08:00,person,1,0.54,stroller,5,0.52,cat,2,0.57
+2025-02-26 12:12:00,cat,1,0.64,,,,,,
+2025-02-26 09:03:00,truck,2,0.94,stroller,2,0.51,,,

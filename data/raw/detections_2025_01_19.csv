@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-01-19 04:16:00,newspaper,2,0.88,,,,,,
+2025-01-19 13:25:00,bird,3,0.66,stroller,4,0.77,,,
+2025-01-19 08:30:00,bird,5,0.93,,,,,,
+2025-01-19 17:07:00,stroller,1,0.78,dog,3,0.98,,,

@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-01-11 23:30:00,racoon,3,0.75,,,,,,
+2025-01-11 04:08:00,racoon,3,0.94,,,,,,
+2025-01-11 08:07:00,fedex truck,5,0.83,bicycle,1,0.98,,,
+2025-01-11 10:11:00,bird,5,0.67,dog,4,0.91,,,
+2025-01-11 07:18:00,car,4,0.8,,,,,,

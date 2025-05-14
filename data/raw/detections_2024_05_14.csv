@@ -1,0 +1,10 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-05-14 07:11:00,school bus,3,0.99,,,,,,
+2024-05-14 15:28:00,school bus,1,0.98,,,,,,
+2024-05-14 14:22:00,mail truck,3,0.8,,,,,,
+2024-05-14 06:50:00,garbage truck,1,0.94,,,,,,
+2024-05-14 07:51:00,recycling truck,1,0.7,,,,,,
+2024-05-14 01:28:00,police car,2,0.97,,,,,,
+2024-05-14 15:19:00,dog,5,0.98,,,,,,
+2024-05-14 15:33:00,ups truck,2,0.61,person,1,0.82,,,
+2024-05-14 11:20:00,bicycle,5,0.58,truck,4,0.59,cat,5,0.61

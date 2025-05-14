@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-03-02 04:35:00,newspaper,2,0.7,,,,,,
+2025-03-02 14:41:00,stroller,1,0.98,,,,,,
+2025-03-02 08:31:00,fedex truck,2,0.77,truck,1,0.95,person,4,0.78
+2025-03-02 09:53:00,fedex truck,1,0.97,,,,,,

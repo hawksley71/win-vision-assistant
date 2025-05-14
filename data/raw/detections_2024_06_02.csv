@@ -1,0 +1,8 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-06-02 13:49:00,ice cream truck,2,0.81,,,,,,
+2024-06-02 04:09:00,newspaper,1,0.71,,,,,,
+2024-06-02 23:01:00,racoon,3,0.75,,,,,,
+2024-06-02 01:35:00,racoon,3,0.84,,,,,,
+2024-06-02 07:50:00,cat,4,0.67,stroller,4,0.82,person,1,0.87
+2024-06-02 18:46:00,bird,3,0.68,chipmunk,3,0.79,dog,5,0.69
+2024-06-02 10:27:00,truck,5,0.96,,,,,,

@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-02-02 04:35:00,newspaper,1,0.8,,,,,,
+2025-02-02 21:29:00,snow plow,2,0.78,,,,,,
+2025-02-02 16:12:00,cat,5,0.63,,,,,,
+2025-02-02 14:51:00,bicycle,3,0.91,,,,,,
+2025-02-02 16:15:00,ups truck,3,0.61,,,,,,

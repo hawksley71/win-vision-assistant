@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-02-22 12:12:00,snow plow,2,0.75,,,,,,
+2025-02-22 10:27:00,prime van,4,0.56,car,5,0.62,bicycle,1,0.55
+2025-02-22 18:51:00,chipmunk,3,0.82,bird,2,0.72,bicycle,4,0.93
+2025-02-22 12:32:00,bicycle,5,0.81,,,,,,

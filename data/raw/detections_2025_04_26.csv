@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-04-26 22:15:00,racoon,1,0.8,,,,,,
+2025-04-26 02:11:00,racoon,1,0.78,,,,,,
+2025-04-26 15:20:00,prime van,4,0.86,person,2,0.53,,,
+2025-04-26 14:03:00,prime van,4,0.54,person,5,0.98,fedex truck,2,0.91
+2025-04-26 15:55:00,cat,1,0.8,stroller,2,0.94,truck,4,0.8

@@ -1,0 +1,4 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-04-12 10:10:00,chipmunk,5,0.81,,,,,,
+2025-04-12 11:30:00,car,4,0.91,chipmunk,2,0.71,,,
+2025-04-12 14:29:00,car,5,0.61,ups truck,3,0.87,bicycle,3,0.87

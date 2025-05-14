@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-03-16 04:28:00,newspaper,2,0.86,,,,,,
+2025-03-16 02:09:00,skunk,3,0.84,,,,,,
+2025-03-16 07:59:00,ups truck,5,0.99,prime van,2,0.75,truck,1,0.75
+2025-03-16 19:00:00,bird,1,0.9,car,2,0.95,stroller,4,0.54
+2025-03-16 06:04:00,stroller,3,0.64,,,,,,

@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-05-18 22:18:00,racoon,1,0.96,,,,,,
+2024-05-18 04:12:00,racoon,2,0.99,,,,,,
+2024-05-18 18:01:00,fedex truck,2,0.85,chipmunk,3,0.6,,,
+2024-05-18 11:38:00,cat,1,0.66,,,,,,
+2024-05-18 06:03:00,bird,4,0.66,cat,1,0.98,,,

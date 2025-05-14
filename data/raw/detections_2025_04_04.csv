@@ -1,0 +1,8 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-04-04 07:01:00,school bus,1,0.72,,,,,,
+2025-04-04 15:21:00,school bus,3,0.9,,,,,,
+2025-04-04 14:41:00,mail truck,1,0.85,,,,,,
+2025-04-04 08:57:00,streetcleaner,3,0.99,,,,,,
+2025-04-04 16:11:00,stroller,2,0.57,chipmunk,2,0.97,prime van,5,0.87
+2025-04-04 15:49:00,bicycle,2,0.61,bird,2,0.94,dog,3,0.98
+2025-04-04 12:24:00,ups truck,4,0.63,stroller,4,0.68,,,

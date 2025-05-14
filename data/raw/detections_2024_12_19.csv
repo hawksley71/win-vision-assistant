@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-12-19 07:15:00,school bus,1,0.75,,,,,,
+2024-12-19 15:11:00,school bus,1,0.87,,,,,,
+2024-12-19 14:00:00,mail truck,3,0.72,,,,,,
+2024-12-19 14:03:00,person,1,0.67,,,,,,
+2024-12-19 16:42:00,chipmunk,4,0.57,bird,2,0.73,,,
+2024-12-19 06:21:00,fedex truck,2,0.52,person,4,0.53,,,

@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-01-05 04:39:00,newspaper,2,0.73,,,,,,
+2025-01-05 01:02:00,snow plow,1,0.95,,,,,,
+2025-01-05 18:09:00,fedex truck,4,0.97,stroller,3,0.53,ups truck,3,0.64
+2025-01-05 11:16:00,stroller,5,0.66,cat,5,0.87,,,
+2025-01-05 12:55:00,prime van,2,0.82,bicycle,2,0.51,bird,5,0.84

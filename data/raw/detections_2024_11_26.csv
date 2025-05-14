@@ -1,0 +1,9 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-11-26 07:20:00,school bus,3,0.88,,,,,,
+2024-11-26 15:04:00,school bus,1,0.96,,,,,,
+2024-11-26 14:07:00,mail truck,2,0.85,,,,,,
+2024-11-26 06:56:00,garbage truck,2,0.87,,,,,,
+2024-11-26 08:22:00,recycling truck,2,0.95,,,,,,
+2024-11-26 09:12:00,fedex truck,4,0.67,chipmunk,4,0.63,prime van,1,0.86
+2024-11-26 18:53:00,fedex truck,1,0.68,prime van,1,0.72,,,
+2024-11-26 07:31:00,fedex truck,3,0.97,bird,1,0.6,stroller,3,0.62

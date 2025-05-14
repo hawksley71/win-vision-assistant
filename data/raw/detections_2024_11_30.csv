@@ -1,0 +1,4 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-11-30 18:04:00,bicycle,2,0.66,stroller,3,0.73,,,
+2024-11-30 15:26:00,bicycle,2,0.5,dog,3,0.88,,,
+2024-11-30 09:59:00,person,4,0.59,prime van,1,0.74,cat,4,0.62

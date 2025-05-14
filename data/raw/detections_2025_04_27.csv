@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-04-27 04:24:00,newspaper,3,0.7,,,,,,
+2025-04-27 23:20:00,racoon,2,0.95,,,,,,
+2025-04-27 04:21:00,racoon,1,0.92,,,,,,
+2025-04-27 18:39:00,bird,1,0.53,ups truck,4,0.72,chipmunk,3,0.98
+2025-04-27 17:56:00,ups truck,3,0.96,,,,,,
+2025-04-27 09:23:00,ups truck,2,0.64,cat,1,0.68,,,

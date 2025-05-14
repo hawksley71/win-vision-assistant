@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-03-23 04:14:00,newspaper,3,0.85,,,,,,
+2025-03-23 14:42:00,ups truck,4,0.71,,,,,,
+2025-03-23 06:41:00,truck,4,0.8,bicycle,5,0.69,,,
+2025-03-23 11:28:00,stroller,1,0.64,,,,,,

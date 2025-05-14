@@ -1,0 +1,8 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-07-05 14:07:00,mail truck,2,0.81,,,,,,
+2024-07-05 14:52:00,ice cream truck,3,0.71,,,,,,
+2024-07-05 07:42:00,streetcleaner,1,0.73,,,,,,
+2024-07-05 00:14:00,fire truck,2,0.75,,,,,,
+2024-07-05 15:39:00,dog,2,0.79,,,,,,
+2024-07-05 07:53:00,dog,1,0.64,bird,2,0.66,person,2,0.77
+2024-07-05 11:40:00,truck,3,0.52,,,,,,

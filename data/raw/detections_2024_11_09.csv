@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-11-09 12:23:00,skunk,3,0.98,,,,,,
+2024-11-09 16:19:00,car,1,0.94,prime van,1,0.63,bicycle,5,0.84
+2024-11-09 16:34:00,chipmunk,5,0.59,dog,4,0.55,,,
+2024-11-09 09:50:00,truck,3,1.0,,,,,,

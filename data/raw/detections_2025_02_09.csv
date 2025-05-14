@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-02-09 04:00:00,newspaper,3,0.86,,,,,,
+2025-02-09 06:27:00,snow plow,3,0.96,,,,,,
+2025-02-09 16:41:00,police car,3,0.89,,,,,,
+2025-02-09 12:10:00,truck,5,0.79,prime van,5,0.58,cat,1,0.84
+2025-02-09 15:33:00,cat,1,0.9,stroller,3,0.71,truck,2,0.72
+2025-02-09 07:19:00,dog,2,0.61,,,,,,

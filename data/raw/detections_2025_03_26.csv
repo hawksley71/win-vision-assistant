@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-03-26 07:10:00,school bus,2,0.82,,,,,,
+2025-03-26 15:25:00,school bus,1,0.79,,,,,,
+2025-03-26 14:07:00,mail truck,1,0.92,,,,,,
+2025-03-26 06:51:00,truck,4,0.96,prime van,3,0.93,bicycle,4,0.83
+2025-03-26 07:03:00,bicycle,2,0.65,fedex truck,4,0.93,chipmunk,1,0.76
+2025-03-26 17:54:00,person,2,0.79,truck,1,0.93,cat,1,0.68

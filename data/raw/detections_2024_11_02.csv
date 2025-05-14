@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-11-02 21:16:00,skunk,3,0.96,,,,,,
+2024-11-02 23:46:00,racoon,3,0.94,,,,,,
+2024-11-02 02:32:00,racoon,1,0.73,,,,,,
+2024-11-02 13:15:00,stroller,4,0.72,,,,,,
+2024-11-02 07:19:00,car,3,0.58,person,4,0.91,dog,3,0.86
+2024-11-02 09:20:00,fedex truck,3,0.79,car,5,0.74,bicycle,3,0.73

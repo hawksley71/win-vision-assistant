@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-07-03 14:55:00,mail truck,1,0.73,,,,,,
+2024-07-03 15:52:00,ice cream truck,3,0.85,,,,,,
+2024-07-03 14:18:00,truck,4,0.58,,,,,,
+2024-07-03 15:58:00,prime van,5,0.78,person,3,0.7,ups truck,2,0.89
+2024-07-03 08:18:00,stroller,3,0.61,car,2,0.97,,,

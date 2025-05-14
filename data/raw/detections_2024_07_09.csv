@@ -1,0 +1,8 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-07-09 14:14:00,mail truck,3,0.74,,,,,,
+2024-07-09 06:42:00,garbage truck,1,0.71,,,,,,
+2024-07-09 07:47:00,recycling truck,3,0.86,,,,,,
+2024-07-09 13:05:00,ice cream truck,1,0.98,,,,,,
+2024-07-09 12:38:00,prime van,3,0.66,cat,4,0.61,,,
+2024-07-09 17:48:00,prime van,3,0.62,dog,5,0.94,bird,5,0.52
+2024-07-09 18:03:00,car,3,0.55,person,5,0.7,,,

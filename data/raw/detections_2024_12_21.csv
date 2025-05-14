@@ -1,0 +1,4 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-12-21 14:42:00,ups truck,3,0.83,person,2,0.85,stroller,2,0.97
+2024-12-21 06:10:00,bird,5,0.98,dog,1,0.98,prime van,4,0.92
+2024-12-21 15:14:00,person,1,0.72,truck,5,0.78,,,

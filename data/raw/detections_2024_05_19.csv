@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-05-19 04:35:00,newspaper,2,0.97,,,,,,
+2024-05-19 18:24:00,ups truck,1,0.81,stroller,3,0.69,,,
+2024-05-19 18:54:00,bird,1,0.84,truck,5,0.7,,,
+2024-05-19 17:02:00,fedex truck,5,0.76,person,2,0.73,,,

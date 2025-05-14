@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-12-08 04:12:00,newspaper,3,0.74,,,,,,
+2024-12-08 06:52:00,bird,5,0.89,,,,,,
+2024-12-08 10:26:00,prime van,2,0.93,fedex truck,5,0.88,cat,4,0.87
+2024-12-08 06:17:00,chipmunk,4,0.72,,,,,,

@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-02-01 14:11:00,oil truck,3,0.88,,,,,,
+2025-02-01 08:57:00,cat,5,0.95,ups truck,3,0.76,,,
+2025-02-01 07:59:00,ups truck,2,0.57,chipmunk,3,0.84,person,1,0.6
+2025-02-01 18:59:00,car,1,0.9,person,3,0.84,fedex truck,2,0.58

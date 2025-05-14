@@ -1,0 +1,9 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-11-21 07:09:00,school bus,1,0.82,,,,,,
+2024-11-21 15:05:00,school bus,2,0.82,,,,,,
+2024-11-21 14:29:00,mail truck,3,0.94,,,,,,
+2024-11-21 23:34:00,racoon,3,0.84,,,,,,
+2024-11-21 02:31:00,racoon,2,0.84,,,,,,
+2024-11-21 18:24:00,stroller,1,0.74,bird,3,0.73,chipmunk,2,0.58
+2024-11-21 15:42:00,fedex truck,5,0.88,bird,5,0.6,ups truck,5,0.55
+2024-11-21 15:10:00,person,1,0.94,cat,5,0.7,chipmunk,2,0.93

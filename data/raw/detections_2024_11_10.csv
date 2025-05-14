@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-11-10 04:02:00,newspaper,2,0.72,,,,,,
+2024-11-10 23:37:00,racoon,2,1.0,,,,,,
+2024-11-10 02:07:00,racoon,3,0.79,,,,,,
+2024-11-10 13:03:00,car,3,0.5,,,,,,
+2024-11-10 06:35:00,fedex truck,5,0.79,chipmunk,5,0.96,,,
+2024-11-10 14:27:00,prime van,3,0.98,car,4,0.72,,,

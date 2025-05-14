@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-10-19 05:38:00,skunk,3,0.92,,,,,,
+2024-10-19 14:42:00,bicycle,2,0.7,prime van,5,0.52,,,
+2024-10-19 08:48:00,truck,4,0.81,,,,,,
+2024-10-19 11:05:00,truck,4,0.79,,,,,,

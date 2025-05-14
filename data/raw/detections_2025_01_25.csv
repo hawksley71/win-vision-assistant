@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-01-25 20:55:00,police car,3,0.91,,,,,,
+2025-01-25 11:39:00,ups truck,4,0.84,car,3,0.63,,,
+2025-01-25 10:12:00,truck,1,0.92,,,,,,
+2025-01-25 07:36:00,bird,3,0.84,person,3,0.99,,,

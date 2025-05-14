@@ -1,0 +1,8 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-07-18 14:41:00,mail truck,1,0.82,,,,,,
+2024-07-18 13:09:00,ice cream truck,2,0.73,,,,,,
+2024-07-18 23:27:00,racoon,1,0.82,,,,,,
+2024-07-18 03:43:00,racoon,3,0.8,,,,,,
+2024-07-18 11:10:00,bicycle,3,0.72,prime van,1,0.75,,,
+2024-07-18 18:31:00,person,1,0.98,cat,5,0.78,,,
+2024-07-18 10:36:00,cat,2,0.7,fedex truck,5,0.65,stroller,5,0.75

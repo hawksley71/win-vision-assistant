@@ -1,0 +1,4 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-03-29 12:48:00,person,1,0.67,fedex truck,2,0.52,,,
+2025-03-29 15:57:00,dog,3,0.6,,,,,,
+2025-03-29 06:24:00,truck,4,0.82,,,,,,

@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-05-12 04:24:00,newspaper,2,0.8,,,,,,
+2024-05-12 21:35:00,skunk,2,0.73,,,,,,
+2024-05-12 17:34:00,dog,2,0.74,person,1,0.93,cat,3,0.54
+2024-05-12 16:39:00,dog,5,0.72,bird,2,0.55,,,
+2024-05-12 09:14:00,prime van,4,0.7,car,4,0.58,,,

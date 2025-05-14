@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-10-27 04:03:00,newspaper,2,0.87,,,,,,
+2024-10-27 23:01:00,racoon,2,0.94,,,,,,
+2024-10-27 01:14:00,racoon,1,0.82,,,,,,
+2024-10-27 18:41:00,person,4,0.58,,,,,,
+2024-10-27 06:47:00,fedex truck,1,0.62,chipmunk,2,0.8,bird,5,0.95
+2024-10-27 18:55:00,dog,1,0.65,ups truck,2,0.82,bicycle,2,0.58

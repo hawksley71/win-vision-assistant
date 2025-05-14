@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-01-04 23:58:00,racoon,1,0.73,,,,,,
+2025-01-04 03:41:00,racoon,2,0.82,,,,,,
+2025-01-04 04:32:00,snow plow,1,0.87,,,,,,
+2025-01-04 14:06:00,fedex truck,3,0.61,bicycle,4,0.9,cat,2,0.72
+2025-01-04 14:35:00,stroller,1,0.64,,,,,,
+2025-01-04 13:30:00,stroller,5,0.62,person,1,0.89,,,

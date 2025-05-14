@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-04-20 04:20:00,newspaper,2,0.82,,,,,,
+2025-04-20 07:14:00,bicycle,5,0.9,chipmunk,2,0.61,,,
+2025-04-20 13:12:00,dog,2,0.87,,,,,,
+2025-04-20 17:53:00,bicycle,4,0.95,stroller,3,0.54,,,

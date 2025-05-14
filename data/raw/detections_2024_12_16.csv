@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-12-16 07:17:00,school bus,1,0.8,,,,,,
+2024-12-16 15:24:00,school bus,2,0.95,,,,,,
+2024-12-16 14:24:00,mail truck,2,0.76,,,,,,
+2024-12-16 16:26:00,fedex truck,2,0.58,stroller,3,0.76,car,3,0.7
+2024-12-16 10:44:00,ups truck,5,0.52,chipmunk,4,0.98,,,
+2024-12-16 07:37:00,fedex truck,1,0.96,,,,,,

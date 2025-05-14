@@ -1,0 +1,4 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-10-12 08:33:00,stroller,4,0.79,cat,3,0.81,,,
+2024-10-12 14:26:00,bird,2,0.74,truck,5,0.97,fedex truck,3,0.81
+2024-10-12 08:07:00,dog,4,0.85,,,,,,

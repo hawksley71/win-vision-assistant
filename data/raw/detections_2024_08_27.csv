@@ -1,0 +1,7 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-08-27 14:52:00,mail truck,1,0.84,,,,,,
+2024-08-27 06:48:00,garbage truck,3,0.89,,,,,,
+2024-08-27 12:03:00,ice cream truck,1,0.95,,,,,,
+2024-08-27 09:55:00,fedex truck,4,0.68,person,1,0.95,,,
+2024-08-27 07:31:00,chipmunk,2,0.71,bird,4,0.63,,,
+2024-08-27 10:04:00,fedex truck,4,0.94,bicycle,4,0.84,bird,3,0.72

@@ -1,0 +1,4 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-05-03 10:12:00,dog,5,0.63,stroller,5,0.99,car,4,0.92
+2025-05-03 10:54:00,truck,3,0.76,chipmunk,4,0.55,,,
+2025-05-03 18:38:00,dog,1,0.66,cat,5,0.76,,,

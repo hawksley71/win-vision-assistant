@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-04-19 23:58:00,racoon,3,0.74,,,,,,
+2025-04-19 01:45:00,racoon,3,0.94,,,,,,
+2025-04-19 08:09:00,dog,5,0.88,stroller,2,0.82,,,
+2025-04-19 17:44:00,ups truck,4,0.67,,,,,,
+2025-04-19 06:16:00,dog,5,0.54,car,1,0.97,stroller,4,0.53

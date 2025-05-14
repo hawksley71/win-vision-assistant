@@ -1,0 +1,6 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-11-24 04:25:00,newspaper,1,0.87,,,,,,
+2024-11-24 23:17:00,skunk,1,0.71,,,,,,
+2024-11-24 11:07:00,fedex truck,1,0.58,,,,,,
+2024-11-24 14:20:00,stroller,1,0.86,fedex truck,3,0.6,,,
+2024-11-24 14:27:00,car,4,0.9,bicycle,4,0.97,,,

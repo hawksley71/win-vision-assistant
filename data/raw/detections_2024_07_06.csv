@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-07-06 13:36:00,ice cream truck,3,0.93,,,,,,
+2024-07-06 17:51:00,ups truck,3,0.82,,,,,,
+2024-07-06 16:42:00,prime van,4,0.97,,,,,,
+2024-07-06 18:10:00,chipmunk,3,0.96,truck,2,0.89,,,

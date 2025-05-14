@@ -1,0 +1,5 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2025-02-16 04:33:00,newspaper,1,0.89,,,,,,
+2025-02-16 12:24:00,ups truck,3,0.57,car,5,0.54,dog,4,0.91
+2025-02-16 11:46:00,fedex truck,4,0.53,prime van,1,0.74,,,
+2025-02-16 13:30:00,truck,3,0.62,,,,,,

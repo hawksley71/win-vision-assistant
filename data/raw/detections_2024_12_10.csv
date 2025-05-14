@@ -1,0 +1,10 @@
+timestamp,label_1,count_1,avg_conf_1,label_2,count_2,avg_conf_2,label_3,count_3,avg_conf_3
+2024-12-10 07:14:00,school bus,3,0.91,,,,,,
+2024-12-10 15:00:00,school bus,3,0.92,,,,,,
+2024-12-10 14:14:00,mail truck,3,0.73,,,,,,
+2024-12-10 06:41:00,garbage truck,2,0.73,,,,,,
+2024-12-10 08:14:00,recycling truck,1,0.91,,,,,,
+2024-12-10 19:25:00,skunk,3,0.93,,,,,,
+2024-12-10 16:09:00,ups truck,4,0.57,prime van,3,0.92,person,4,0.98
+2024-12-10 07:04:00,prime van,5,0.76,cat,4,0.86,,,
+2024-12-10 13:22:00,prime van,3,0.8,car,4,0.82,,,
