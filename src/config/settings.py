@@ -46,7 +46,7 @@ MODEL_SETTINGS = {
     'yolov8': {
         'confidence_threshold': 0.25,  # Minimum confidence score for detections (0.0 to 1.0)
         'iou_threshold': 0.45,        # IoU threshold for non-maximum suppression (0.0 to 1.0)
-        'max_detections': 20,         # Maximum number of detections per frame
+        'max_detections': 3,         # Maximum number of detections per frame
         'device': 'cuda',             # Device to run inference on ('cuda' or 'cpu')
     },
     'yolov5': {
@@ -61,7 +61,7 @@ MODEL_SETTINGS = {
 CAMERA_SETTINGS = {
     'width': 640,     # Camera capture width in pixels
     'height': 480,    # Camera capture height in pixels
-    'fps': 10,        # Frames per second
+    'fps': 30,        # Frames per second
 }
 
 # Logging settings for detection and application logs

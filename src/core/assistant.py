@@ -987,13 +987,13 @@ class DetectionAssistant:
                 print(f"[ASSISTANT RESPONSE] {message}")
                 # Send message to Home Assistant TTS (cloud_say)
                 def send_tts_to_ha(message):
-                    url = "http://localhost:8123/api/services/tts/cloud_say"
+                    url = f"{HOME_ASSISTANT['url']}/api/services/tts/cloud_say"
                     headers = {
                         "Authorization": f"Bearer {HOME_ASSISTANT_TOKEN}",
                         "Content-Type": "application/json",
                     }
                     payload = {
-                        "entity_id": "media_player.den_speaker",
+                        "entity_id": HOME_ASSISTANT['media_player'],
                         "message": message,
                         "language": "en-US",
                         "cache": False
@@ -1021,7 +1021,7 @@ class DetectionAssistant:
                 print(f"Voice assistant error: {e}")
 
     def wait_for_intro_to_finish(self):
-        url = "http://localhost:8123/api/states/media_player.den_speaker"
+        url = f"{HOME_ASSISTANT['url']}/api/states/{HOME_ASSISTANT['media_player']}"
         headers = {"Authorization": f"Bearer {HOME_ASSISTANT_TOKEN}"}
         intro_text = "Hello! I am your vision-aware assistant. I can see and detect objects in my view. Ask me what I see, or about past detections."
         last_word = "detections"
@@ -1049,13 +1049,13 @@ class DetectionAssistant:
         # Generate and play intro via Home Assistant
         intro_text = "Hello! I am your vision-aware assistant. I can see and detect objects in my view. Ask me what I see, or about past detections."
         def send_tts_to_ha(message):
-            url = "http://localhost:8123/api/services/tts/cloud_say"
+            url = f"{HOME_ASSISTANT['url']}/api/services/tts/cloud_say"
             headers = {
                 "Authorization": f"Bearer {HOME_ASSISTANT_TOKEN}",
                 "Content-Type": "application/json",
             }
             payload = {
-                "entity_id": "media_player.den_speaker",
+                "entity_id": HOME_ASSISTANT['media_player'],
                 "message": message,
                 "language": "en-US",
                 "cache": False
@@ -1092,14 +1092,21 @@ class DetectionAssistant:
         
         print("[DEBUG] Starting main detection loop...")
         while True:
+            t_loop_start = time.time()
+            t0 = time.time()
             ret, frame = self.cap.read()
+            t1 = time.time()
+            print(f"[PROFILE] Camera read time: {t1 - t0:.3f} seconds")
             if not ret:
                 print("Error: Could not read frame")
                 break
                 
             # Run detection
             try:
+                t2 = time.time()
                 detections = self.model.detect(frame)
+                t3 = time.time()
+                print(f"[PROFILE] YOLOv8 inference time: {t3 - t2:.3f} seconds")
                 if detections:
                     print(f"[DEBUG] Detected objects: {[d['class_name'] for d in detections]}")
                 self.latest_detections = detections
@@ -1110,7 +1117,10 @@ class DetectionAssistant:
                 
             # Draw detections
             try:
+                t4 = time.time()
                 frame = self.model.draw_detections(frame, detections)
+                t5 = time.time()
+                print(f"[PROFILE] Drawing detections time: {t5 - t4:.3f} seconds")
             except Exception as e:
                 print(f"[DEBUG] Error drawing detections: {e}")
                 
@@ -1145,6 +1155,8 @@ class DetectionAssistant:
                 if cv2.getWindowProperty('Live Detection Assistant', cv2.WND_PROP_VISIBLE) >= 1:
                     if cv2.waitKey(1) & 0xFF == ord('q'):
                         break
+            t_loop_end = time.time()
+            print(f"[PROFILE] Total loop time: {t_loop_end - t_loop_start:.3f} seconds\n")
         self.voice_active = False
         self.voice_thread.join()
         self.cleanup()

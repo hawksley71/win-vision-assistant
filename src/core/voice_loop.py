@@ -301,7 +301,7 @@ class VoiceLoop:
 
     def wait_for_intro_to_finish(self):
         """Wait for the intro message to finish playing."""
-        url = "http://localhost:8123/api/states/media_player.den_speaker"
+        url = f"{HOME_ASSISTANT['url']}/api/states/{HOME_ASSISTANT['media_player']}"
         headers = {"Authorization": f"Bearer {HOME_ASSISTANT_TOKEN}"}
         intro_text = "Hello! I am your vision-aware assistant. I can see and detect objects in my view. Ask me what I see, or about past detections."
         last_word = "detections"
@@ -328,11 +328,7 @@ class VoiceLoop:
             # Reduced warmup time
             print("[DEBUG] Warming up, please wait...")
             time.sleep(0.2)  # Reduced from 0.5
-            
-            # Test microphone before proceeding
-            if not self.test_microphone(timeout=1):  # Reduced timeout from 2
-                print("[DEBUG] WARNING: Microphone test failed. Voice recognition may not work.")
-            
+            # Removed microphone test for faster startup
             # Generate and play intro via Home Assistant
             intro_text = "Hello! I am your vision-aware assistant. I can see and detect objects in my view. Ask me what I see, or about past detections."
             print("[DEBUG] Sending intro message to Home Assistant")

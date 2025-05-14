@@ -16,7 +16,7 @@ headers = {
 url = "http://localhost:8123/api/services/tts/cloud_say"
 
 payload = {
-    "entity_id": "media_player.den_speaker",
+    "entity_id": HOME_ASSISTANT['media_player'],
     "message": "Hello from Python using Home Assistant Cloud TTS"
 }
 

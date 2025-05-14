@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -84,14 +50,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Vision-Aware Smart Assistant</h1>
 <section id="project-overview" class="level2">
 <h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
-<p>This project is a modular, voice-driven, vision-aware assistant that integrates live object detection (YOLOv8), historical log analysis, and natural language voice interaction. The system can answer both live and historical queries about detected objects, using the current camera feed and combined detection logs. It features robust intent detection, partial/fuzzy matching, and seamless integration with Home Assistant for text-to-speech (TTS) output.</p>
+<p>This project is a modular, voice-driven, vision-aware assistant that integrates live object detection (YOLOv8), historical log analysis, and natural language voice interaction. The system can answer both live and historical queries about detected objects, using the current camera feed and combined detection logs. It features robust intent detection (OpenAI + regex), partial/fuzzy matching, and seamless integration with Home Assistant for text-to-speech (TTS) output. If the smart speaker is unavailable, it falls back to local TTS playback.</p>
 </section>
 <section id="technologies-used" class="level2">
 <h2 class="anchored" data-anchor-id="technologies-used">Technologies Used</h2>
 <ul>
 <li><strong>Python 3.10</strong></li>
-<li><strong>YOLOv8/YOLOv5</strong> for object detection</li>
-<li><strong>OpenAI API</strong> for code interpreter and pattern analysis</li>
+<li><strong>YOLOv8</strong> for object detection (GPU-accelerated with CUDA when available)</li>
+<li><strong>OpenAI API</strong> for intent detection and pattern analysis</li>
 <li><strong>SpeechRecognition</strong> and <strong>gTTS</strong> for voice input/output</li>
 <li><strong>OpenCV</strong> for camera and image processing</li>
 <li><strong>Home Assistant</strong> for TTS and smart home integration</li>
@@ -101,12 +67,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="home-assistant-integration" class="level2">
 <h2 class="anchored" data-anchor-id="home-assistant-integration">Home Assistant Integration</h2>
-<p>Home Assistant is an open-source home automation platform. In this project, it is used to play TTS responses on a smart speaker. The assistant sends HTTP requests to Home Assistant’s TTS service, which then vocalizes responses to the user.</p>
+<p>Home Assistant is used to play TTS responses on a smart speaker. The assistant sends HTTP requests to Home Assistant’s TTS service, which vocalizes responses. If the TTS service fails, the system uses local TTS playback via gTTS and PyGame.</p>
+</section>
+<section id="optional-home-assistant-webhook-integration" class="level2">
+<h2 class="anchored" data-anchor-id="optional-home-assistant-webhook-integration">Optional: Home Assistant Webhook Integration</h2>
+<ul>
+<li>The file <code>src/core/webhook.py</code> provides a Flask webhook endpoint for Home Assistant to trigger the Vision-Aware Smart Assistant (e.g., via automations or voice commands).</li>
+<li><strong>When to use:</strong> If you want Home Assistant to “push” events or commands to your assistant (such as starting detection or sending custom messages).</li>
+<li><strong>Not needed:</strong> If your assistant only sends TTS messages to Home Assistant (the default/current setup), you do NOT need to run or configure this webhook.</li>
+<li>See comments in <code>webhook.py</code> for more details.</li>
+</ul>
 </section>
 <section id="setup-instructions" class="level2">
 <h2 class="anchored" data-anchor-id="setup-instructions">Setup Instructions</h2>
-<section id="linux-setup" class="level3">
-<h3 class="anchored" data-anchor-id="linux-setup">Linux Setup</h3>
+<section id="linux-windows-setup" class="level3">
+<h3 class="anchored" data-anchor-id="linux-windows-setup">Linux &amp; Windows Setup</h3>
 <ol type="1">
 <li><p>Install <a href="https://mamba.readthedocs.io/en/latest/installation.html">Mamba</a> or <a href="https://docs.conda.io/en/latest/miniconda.html">Conda</a>.</p></li>
 <li><p>Create the environment:</p>
@@ -117,115 +92,55 @@ conda env create -f docs/environment.yml</code></pre></li>
 <pre><code>mamba activate vision-assistant
 # or
 conda activate vision-assistant</code></pre></li>
+<li><p><strong>Install PyTorch with CUDA (Windows):</strong></p>
+<pre><code>pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121</code></pre></li>
 <li><p>Set up your <code>.env</code> file with OpenAI and Home Assistant tokens.</p></li>
-<li><p>Run the main assistant script as described below.</p></li>
-</ol>
-</section>
-<section id="windows-setup" class="level3">
-<h3 class="anchored" data-anchor-id="windows-setup">Windows Setup</h3>
-<p>For Windows users, please refer to the detailed setup guide in <code>docs/windows_setup.md</code>. The guide covers: - Prerequisites installation - Project setup - Audio configuration - Home Assistant setup - Common troubleshooting</p>
-</section>
-</section>
-<section id="codebase-structure-and-file-descriptions" class="level2">
-<h2 class="anchored" data-anchor-id="codebase-structure-and-file-descriptions">Codebase Structure and File Descriptions</h2>
-<section id="srccore" class="level3">
-<h3 class="anchored" data-anchor-id="srccore">src/core/</h3>
-<ul>
-<li><strong>assistant.py</strong>: Main detection and voice assistant logic. Handles camera, detection buffer, query routing, and TTS output. Inputs: camera frames, voice input. Outputs: TTS responses, detection logs.</li>
-<li><strong>voice_loop.py</strong>: Manages the main loop for voice and detection, including query classification and routing.</li>
-<li><strong>openai_assistant.py</strong>: Handles OpenAI API integration for code interpreter and pattern analysis.</li>
-<li><strong>tts.py</strong>: Utility for sending TTS messages to Home Assistant.</li>
-<li><strong>webhook.py</strong>: (If used) Handles webhook integration for external triggers.</li>
-</ul>
-</section>
-<section id="srcutils" class="level3">
-<h3 class="anchored" data-anchor-id="srcutils">src/utils/</h3>
-<ul>
-<li><strong>audio.py</strong>: Cross-platform microphone selection and audio device utilities. Supports both Linux and Windows systems.</li>
-<li><strong>mic_test.py</strong>: Script to test and debug microphone input.</li>
-<li><strong>openai_utils.py</strong>: Helper functions for OpenAI API usage.</li>
-<li><strong>combine_logs.py</strong>: Combines daily detection logs into a single CSV for historical analysis.</li>
-</ul>
-</section>
-<section id="srcmodels" class="level3">
-<h3 class="anchored" data-anchor-id="srcmodels">src/models/</h3>
-<ul>
-<li><strong>yolov8_model.py</strong>: Wrapper for YOLOv8 object detection model.</li>
-<li><strong>yolov5_model.py</strong>: Wrapper for YOLOv5 object detection model.</li>
-<li><strong>base_model.py</strong>: Base class for detection models.</li>
-</ul>
-</section>
-<section id="srcconfig" class="level3">
-<h3 class="anchored" data-anchor-id="srcconfig">src/config/</h3>
-<ul>
-<li><strong>settings.py</strong>: Centralized configuration for paths, camera, logging, audio, and Home Assistant.</li>
-</ul>
-</section>
-<section id="tools" class="level3">
-<h3 class="anchored" data-anchor-id="tools">tools/</h3>
-<ul>
-<li><strong>generate_fake_logs.py</strong>: Generates synthetic detection logs for testing.</li>
-<li><strong>estimate_token_usage.py</strong>: Estimates OpenAI API token usage for logs.</li>
-</ul>
-</section>
-<section id="data-organization" class="level3">
-<h3 class="anchored" data-anchor-id="data-organization">Data Organization</h3>
-<ul>
-<li><strong>data/raw/</strong>: Original detection logs</li>
-<li><strong>data/processed/</strong>: Combined and processed detection logs</li>
-<li><strong>data/logs/</strong>: Application logs</li>
-</ul>
-</section>
-<section id="other" class="level3">
-<h3 class="anchored" data-anchor-id="other">Other</h3>
-<ul>
-<li><strong>docs/assistant_test_questions.txt</strong>: List of test questions for all objects.</li>
-<li><strong>docs/environment.yml</strong>: Environment specification for reproducibility.</li>
-<li><strong>docs/windows_setup.md</strong>: Detailed Windows setup guide.</li>
-</ul>
-</section>
-</section>
-<section id="what-has-been-accomplished" class="level2">
-<h2 class="anchored" data-anchor-id="what-has-been-accomplished">What Has Been Accomplished</h2>
-<ul>
-<li>Live object detection with YOLOv8 and robust detection buffer.</li>
-<li>Voice interaction with intent detection, partial/fuzzy matching, and pronoun resolution.</li>
-<li>Historical log analysis and pattern mining using OpenAI code interpreter.</li>
-<li>Seamless TTS output via Home Assistant.</li>
-<li>Modular, extensible codebase with clear separation of concerns.</li>
-<li>Comprehensive test question set for all objects.</li>
-<li>Cross-platform support (Linux and Windows).</li>
-<li>Standardized data organization structure.</li>
-</ul>
-<p>(See <code>docs/reports/</code> for project plans, requirements, and summaries.)</p>
-</section>
-<section id="possible-improvements-and-future-directions" class="level2">
-<h2 class="anchored" data-anchor-id="possible-improvements-and-future-directions">Possible Improvements and Future Directions</h2>
-<ul>
-<li>Add a web dashboard for real-time and historical visualization.</li>
-<li>Improve pattern mining with more advanced ML/statistical methods.</li>
-<li>Support for multiple languages and voices.</li>
-<li>Integrate with more smart home devices (lights, sensors, etc.).</li>
-<li>Add user authentication and personalized responses.</li>
-<li>Optimize for edge devices (e.g., Raspberry Pi with Coral/Jetson).</li>
-<li>Expand dataset and detection classes for broader use cases.</li>
-<li>Add macOS support and documentation.</li>
-</ul>
-<hr>
-</section>
-<section id="how-to-run" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-run">How to Run</h2>
-<ol type="1">
-<li><p>Start Home Assistant and ensure the TTS service is available.</p></li>
+<li><p>Download YOLOv8 weights (<code>yolov8n.pt</code>) and place in <code>models/weights/</code>.</p></li>
 <li><p>Run the main assistant script:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> src.core.voice_loop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Interact via microphone and listen for responses on your Home Assistant speaker.</p></li>
+<pre><code>python -m src.core.voice_loop</code></pre></li>
 </ol>
-<hr>
+</section>
+<section id="home-assistant-setup-windows" class="level3">
+<h3 class="anchored" data-anchor-id="home-assistant-setup-windows">Home Assistant Setup (Windows)</h3>
+<ul>
+<li><p>Install Docker Desktop.</p></li>
+<li><p>Run Home Assistant container:</p>
+<pre><code>docker run -d --name homeassistant --privileged -v C:\Users\hawks\homeassistant:/config -e TZ=America/New_York --network=host homeassistant/home-assistant:stable</code></pre></li>
+<li><p>Complete onboarding at <a href="http://localhost:8123">http://localhost:8123</a>.</p></li>
+<li><p>Add Google Cast integration for smart speaker support.</p></li>
+</ul>
+</section>
+</section>
+<section id="codebase-structure" class="level2">
+<h2 class="anchored" data-anchor-id="codebase-structure">Codebase Structure</h2>
+<ul>
+<li><code>src/core/assistant.py</code>: Main detection and voice assistant logic.</li>
+<li><code>src/core/voice_loop.py</code>: Manages the main loop for voice and detection.</li>
+<li><code>src/models/yolov8_model.py</code>: YOLOv8 model wrapper.</li>
+<li><code>src/utils/audio.py</code>: Microphone selection utilities.</li>
+<li><code>src/config/settings.py</code>: Centralized configuration.</li>
+<li><code>data/raw/</code>, <code>data/processed/</code>: Detection logs.</li>
+<li><code>models/weights/</code>: Model weights (tracked in Git).</li>
+</ul>
+</section>
+<section id="troubleshooting-performance-tips" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting-performance-tips">Troubleshooting &amp; Performance Tips</h2>
+<ul>
+<li>Ensure PyTorch is GPU-enabled: <code>python -c "import torch; print(torch.cuda.is_available())"</code></li>
+<li>Lower camera resolution in <code>src/config/settings.py</code> for higher FPS.</li>
+<li>Use Docker for Home Assistant on Windows.</li>
+<li>If TTS fails, check Home Assistant logs and network settings.</li>
+</ul>
+</section>
+<section id="demo-script" class="level2">
+<h2 class="anchored" data-anchor-id="demo-script">Demo Script</h2>
+<ul>
+<li>See <code>docs/assistant_test_questions.txt</code> for example queries.</li>
+</ul>
 </section>
 <section id="contact" class="level2">
 <h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<p>For questions or contributions, please see the project repository or contact the maintainer.</p>
+<p>For questions or contributions, see the project repository or contact the maintainer.</p>
 </section>
 </section>
 
