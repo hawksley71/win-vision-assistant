@@ -84,4 +84,8 @@ Thumbs.db
 .env
 
 # Ignore drafts and temp files in reports
-/docs/reports/drafts/ 
+/docs/reports/drafts/
+
+# Allow sample data for testing
+!data/raw/*
+!data/processed/* 
