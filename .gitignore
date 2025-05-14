@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+vision_assistant.egg-info/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+*.log
+*.csv
+*.json
+*.pkl
+*.h5
+*.pt
+*.pth
+*.onnx
+*.engine
+*.trt
+*.wts
+*.weights
+*.cfg
+*.names
+*.txt
+!requirements.txt
+!docs/assistant_test_questions.txt
+
+# EXCEPTION: Track model weights/configs in models/weights/
+!models/weights/*.pt
+!models/weights/*.weights
+!models/weights/*.cfg
+!models/weights/*.onnx
+!models/weights/*.engine
+!models/weights/*.trt
+!models/weights/*.wts
+!models/weights/*.names
+
+# YOLOv5
+yolov5/
+
+# Archive and deprecated folders
+archive/
+deprecated/
+
+# Generated files
+assets/
+
+# Jupyter Notebooks
+*.ipynb
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env 
